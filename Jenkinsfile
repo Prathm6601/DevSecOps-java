@@ -1,3 +1,5 @@
+@Library('Jenkins_Share_lib') _
+
 pipeline{
     
     agent any 
@@ -9,8 +11,8 @@ pipeline{
             steps{
                 
                 script{
-                    
-                    git branch: 'main', url: 'https://github.com/Prathm6601/DevSecOps-java.git'
+                    branch: "main",
+                    url: 'https://github.com/Prathm6601/DevSecOps-java.git'
                 }
             }
         }
